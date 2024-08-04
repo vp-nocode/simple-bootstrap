@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Website</title>
+    <title>Зачарованный Лес</title>
     <!-- Bootstrap CSS -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -11,15 +11,15 @@
 <body>
 
 <!-- Шапка сайта -->
-<header class="bg-primary text-white p-3">
+<header class="text-bg-success text-bg-success p-3">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <h1 class="h3">My Website</h1>
+            <h1 class="h3">Зачарованный лес</h1>
             <nav>
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#frienfs">Пух и его друзья</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#accordion-movies">Мультфильмы</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#footer">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,64 +30,102 @@
 <main class="container my-5">
     <!-- Первая секция: Слайдер -->
     <section class="mb-5">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Third slide">
-                </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src=img\forest2.jpg class="d-block w-100" alt="...">
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <img src="img\forest1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img\forest3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
         </div>
     </section>
 
     <!-- Вторая секция: Карточки -->
-    <section class="mb-5">
+    <section id="frienfs" class="mb-5">
+        <h1 class="h3">Винни-пух и его друзья</h1>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Card image 1">
+                    <img src="img\pooh.jpg" class="card-img-top" alt="Card image 1">
                     <div class="card-body">
-                        <h5 class="card-title">Card title 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Винни-Пух</h5>
+                        <p class="card-text">
+                            жизнерадостный медвежонок с опилками в голове, который любит распевать песенки,
+                            сочиняемые им шумелки-пыхтелки. Больше всего на свете Винни любит лакомиться мёдом
+                            и проводить время со своим лучшим другом, поросенком Пятачком.
+                        </p>
+                        <a href="#footer" class="btn btn-success">Написать письмо</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Card image 2">
+                    <img src="img\pinglet.jpg" class="card-img-top" alt="Card image 2">
                     <div class="card-body">
-                        <h5 class="card-title">Card title 2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Пятачок</h5>
+                        <p class="card-text">
+                            маленький поросёнок, самый близкий друг Винни-Пуха.
+                            Он постоянно боится темноты и многих других вещей, и всегда очень тревожится
+                            по самым разным поводам
+                        </p>
+                        <a href="#footer" class="btn btn-success">Написать письмо</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Card image 3">
+                    <img src="img\ia-ia.jpg" class="card-img-top" alt="Card image 3">
                     <div class="card-body">
-                        <h5 class="card-title">Card title 3</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Ослик Иа-Иа</h5>
+                        <p class="card-text">
+                            не очень любит веселиться, предпочитает уединение. Не желая доставлять друзьям
+                            лишних хлопот уходит в себя с головой. А считая себя невезучим, занимаются самобичеванием.
+                            Среди прочего Ослик очень вежливый и хорошо воспитан, а также склонен к глубоким
+                            философским рассуждениям.
+                        </p>
+                        <a href="#footer" class="btn btn-success">Написать письмо</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img\rabbit.jpg" class="card-img-top" alt="Card image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Кролик</h5>
+                        <p class="card-text">
+                            любит во всём порядок, организованность, всегда сердится, если кто-то делает
+                            что-то не так, как это было указано им, Кроликом. Самая важная вещь для Кролика
+                            — его огород, этому он посвящает основную часть своего времени.
+                            В некоторых версиях носит очки, проявляет себя воспитанным.
+                        </p>
+                        <a href="#footer" class="btn btn-success">Написать письмо</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="img\owl.jpg" class="card-img-top" alt="Card image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Сова</h5>
+                        <p class="card-text">
+                            одна из двух обитателей Зачарованного Леса, кто имеет мозги, это ей говорит Кролик.
+                            Она самая старшая жительница Зачарованного Леса. Всем, кто пришёл к ней в гости,
+                            приходится выслушивать истории про её родственников и предков.
+                        </p>
+                        <a href="#footer" class="btn btn-success">Написать письмо</a>
                     </div>
                 </div>
             </div>
@@ -96,64 +134,108 @@
 
     <!-- Третья секция: Аккордеон -->
     <section>
-        <div class="accordion" id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
-                    </div>
-                </div>
+        <h1 class="h3">Сюжеты мультфильмов про Винни-пуха и его друзей</h1>
+        <div class="accordion" id="accordion-movies">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                1. Винни-Пух (1969)
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="accordion-movies">
+              <div class="accordion-body">
+                  Медвежонок по имени Винни-Пух, идя по лесу и напевая песенки, встречает высокий-превысокий дуб
+                  с мёдом в улье на верхушке и с пчёлами. Сначала он пытается самостоятельно добраться до мёда,
+                  но ветка ломается, и он падает в репейник.
+                <p></p>
+                Тогда Винни-Пух отправился к своему лучшему другу — поросёнку Пятачку, который жил в домике с
+                  надписью «Посторонним В». Сняв колючки с носа, он попросил у него воздушный шарик, и тот дал
+                  ему синий шар. Желая замаскироваться под «тучку», Винни-Пух окунается в лужу. Возле дуба Винни-Пух
+                  надувает шар побольше, поскольку Пятачок не сумел и чуть не улетел, и воспаряет к улью.
+                <p></p>
+                Но Винни-Пуху, желавшему «утащить мёд», всячески препятствуют пчёлы и даже начинают жалить его.
+                  Тогда медвежонок придумывает хитроумный план: он просит Пятачка открывать зонтик и ходить взад-вперёд,
+                  поговаривая: «Кажется, дождь собирается», а сам решил напевать «тучкины песни».
+                <p></p>
+                В конце-концов, поняв, что «это неправильные пчёлы, и они делают неправильно мёд», Винни-Пух решает
+                  спуститься на землю и просит Пятачка принести ружьё и сбить шар. Пятачку с третьей попытки удаётся
+                  сбить шар, и Винни-Пух приземляется на землю и отряхивает с себя грязь.
+                  Затем все уходят подкрепляться.
+              </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
-                    </div>
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                2. Винни-Пух идёт в гости (1971)
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-movies">
+              <div class="accordion-body">
+                    Как-то утром Винни-Пух не спеша прогуливался с Пятачком и сочинял новую песенку. В этот момент
+                    Пуху пришла идея пойти к кому-нибудь в гости. Они идут наугад, напевая песню
+                    «Кто ходит в гости по утрам», сочинённую Пухом.
+                  <p></p>
+                    Наконец, они приходят к норе Кролика. Хотя они пришли незваными, Кролик принимает друзей и
+                    угощает их мёдом и сгущённым молоком (во время перекуса Винни-Пух не заметил,
+                    как завязал Пятачку рот полотенцем). Однако потом Пух съедает все припасы Кролика за
+                    исключением мёда, оставленного Пятачку, и, попытавшись вылезть наружу, застревает в норе
+                    из-за распухшего живота. Вытащить его невозможно, и Кролик предлагает ждать неделю,
+                    пока Винни похудеет.
+                  <p></p>
+                    В этот момент Пух чихает, разрушив кроличий балкон, и говорит, что он похудел, после чего
+                    Кролик и Пятачок его вытаскивают. Теперь он понял, что не стоит слишком долго засиживаться
+                    в гостях, чтобы не попасть в «безвыходное положение»
+
+              </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute.
-                    </div>
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                3. Винни-Пух и день забот (1972)
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion-movies">
+              <div class="accordion-body">
+                    Старый серый ослик Иа стоит на берегу озера и грустит. К нему приходит Винни-Пух, которому Иа
+                  признаётся, что у него сегодня день рождения, о котором никто не вспомнил. Винни-Пух замечает, что
+                  ослик где-то потерял хвост.
+                    <p></p>
+                    Позже Винни-Пух встречается с Пятачком, который решил зайти к нему, проходя мимо, и они решают п
+                  оздравить Иа: Винни-Пух подарит ему горшок с мёдом, а Пятачок — оставшийся зелёный воздушный шарик.
+                  Однако по дороге Пух съел мёд, а после пришёл к Сове, чтобы она написала поздравление на его горшке.
+                    <p></p>
+                    Пятачок, желая первым преподнести Иа подарок, так спешил, что, не глядя под ноги, упал на шарик,
+                  из-за чего тот лопнул, и заплакал — больше у него нет шариков, ещё до этого подаренных Кроликом.
+                  Тем временем Винни-Пух замечает на колокольчике Совы странный шнурок, найденный Совой (как она
+                  сама признаётся) на кустике, и, узнав в нём хвост Иа, убеждает Сову подарить ослику этот «шнурок».
+                    <p></p>
+                    Пятачок, всё ещё плача, приходит к ослику Иа со своим лопнувшим шариком и признаётся, почему так
+                  получилось. Следом приходит Винни-Пух с пустым горшком и говорит ослику, что в него можно класть,
+                  что угодно. Для лопнувшего шарика горшок подошёл.
+                    <p></p>
+                    Под конец приходит Сова и возвращает ослику утерянный хвост, а Винни-Пух привязывает его
+                  бантиком. Сова пребывает в недоумении, но когда ситуация проясняется, начинает смеяться наравне
+                  с остальными. Затем компания в песенной форме весело отмечает день рождения Иа.
+              </div>
             </div>
+          </div>
         </div>
     </section>
 </main>
 
 <!-- Футер -->
-<footer class="bg-dark text-white p-3">
+<footer id="footer" class="bg-success text-white p-3">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5>Contact Us</h5>
-                <p>Email: info@example.com</p>
+                <h5>Наши контакты</h5>
+                <p>Email: info@forest.com</p>
                 <p>Phone: +1234567890</p>
             </div>
             <div class="col-md-6">
-                <h5>Follow Us</h5>
+                <h5>Социальные сети</h5>
                 <ul class="list-inline">
                     <li class="list-inline-item"><a class="text-white" href="#">Facebook</a></li>
                     <li class="list-inline-item"><a class="text-white" href="#">Twitter</a></li>
